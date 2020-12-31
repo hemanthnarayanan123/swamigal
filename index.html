@@ -34,7 +34,7 @@ if (urlParams["bodyStyle"]) document.body.setAttribute("style", urlParams["bodyS
 var c;
 setInterval(
 c = function() {
-    output.innerText = "Sri Seshadri Swamigal 92nd Aradhanai - Coimbatore - "+ moment().format(urlParams["format"] || '');
+    output.innerText = (urlParams["message"] || '') + moment().format(urlParams["format"] || '');
 }, 1000);
 c();
 
